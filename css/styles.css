@@ -194,6 +194,17 @@ header {
   color: var(--accent-blue-color);
 }
 
+.info-nav .item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 16px;
+  height: 12px;
+  margin: 0;
+}
+
 /* ------------HERO------------ */
 
 .hero {
