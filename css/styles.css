@@ -272,6 +272,8 @@ header {
 .button-list .button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-blue-color);
+
+  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
 }
 
 .main-button {
@@ -430,6 +432,7 @@ header {
   align-items: center;
   width: 44px;
   height: 44px;
+  border: none;
   border-radius: 50%;
 }
 
@@ -496,6 +499,7 @@ header {
 
 .footer .column-list {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .column:not(:last-child) {
@@ -531,10 +535,6 @@ header {
 }
 
 /* -----SECOND-COLUMN----- */
-
-.footer-second-column {
-  /* align-items: baseline; */
-}
 
 .footer-second-column .title {
   margin-bottom: 20px;
@@ -594,16 +594,9 @@ header {
   margin-bottom: 0;
 }
 
-.examples-list .link:hover {
-  /* border: 10px solid black, ; */
-
+.examples-list .item:hover,
+.examples-list .item:focus {
   box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
-
-  /* box-shadow: 1px 4px 6px 0px #00000029;
-
-box-shadow: 0px 4px 4px 0px #0000000F;
-
-box-shadow: 0px 1px 1px 0px #0000001F; */
 }
 
 .examples-list .link {
