@@ -222,6 +222,7 @@ header {
     url('../images/index/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -393,13 +394,11 @@ header {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  padding-bottom: 30px;
 }
 
 .team-list .describe {
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
 }
 
 .team-list .title,
@@ -419,7 +418,8 @@ header {
 
 .soc-networks {
   display: flex;
-  margin: 16px 32px 0;
+  margin-top: 16px;
+  justify-content: center;
 }
 
 .soc-networks .item:not(:last-child) {
@@ -434,20 +434,18 @@ header {
   height: 44px;
   border: none;
   border-radius: 50%;
+
+  color: var(--icon-soc-networks-color);
 }
 
 .soc-networks .icon {
-  fill: var(--icon-soc-networks-color);
+  fill: currentColor;
 }
 
 .soc-icon-link:hover,
 .soc-icon-link:focus {
   background-color: var(--accent-blue-color);
-}
-
-.soc-icon-link:hover .icon,
-.soc-icon-link:focus .icon {
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 
 /* ------------ПОСТІЙНІ КЛІЄНТИ------------ */
@@ -473,20 +471,18 @@ header {
 
   border: 1px solid var(--icon-soc-networks-color);
   border-radius: 4px;
+
+  color: var(--icon-soc-networks-color);
 }
 
 .section-clients .image {
-  fill: var(--icon-soc-networks-color);
+  fill: currentColor;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-blue-color);
-}
-
-.clients-link:hover .image,
-.clients-link:focus .image {
-  fill: var(--accent-blue-color);
+  color: var(--accent-blue-color);
 }
 
 /* ------------ФУТЕР------------ */
@@ -562,10 +558,11 @@ header {
   border-radius: 50%;
 
   background-color: #ffffff1a;
+  color: var(--primary-white-color);
 }
 
 .footer-second-column .icon {
-  fill: var(--primary-white-color);
+  fill: currentColor;
 }
 
 .footer-second-column .link-icon:hover,
@@ -594,13 +591,14 @@ header {
   margin-bottom: 0;
 }
 
-.examples-list .item:hover,
-.examples-list .item:focus {
-  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+.examples-list .card-link {
+  display: block;
+  color: var(--primary-text-color);
 }
 
-.examples-list .link {
-  color: var(--primary-text-color);
+.examples-list .card-link:hover,
+.examples-list .card-link:focus {
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
 }
 
 .examples-list .border {
